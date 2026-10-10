@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muebles ZaJo — Muebles sustentables para tu hogar y negocio. Catálogo, cotizaciones y promociones.">
+    <title>Muebles ZaJo · Muebles para Hogar y Negocio</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4caf50">
+    <link rel="apple-touch-icon" href="img/icons/icon_x192.png">
+    <link rel="icon" type="image/png" href="img/icons/icon_x48.png">
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/icons/icon_x72.png" alt="Muebles ZaJo" class="logo-img">
+            <div class="logo-text">
+                <h1 id="titulo">Muebles ZaJo</h1>
+                <span class="logo-tagline">Hogar &amp; Negocio</span>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <button id="install-btn" class="btn btn-secondary oculto" title="Instalar aplicación en tu dispositivo">
+                <span class="btn-icon">📲</span>
+                <span class="btn-label">Instalar</span>
+            </button>
+            <button id="notif-btn" class="btn btn-notif oculto" title="Recibir notificaciones">
+                <span class="btn-icon">🔔</span>
+                <span class="btn-label">Ofertas</span>
+            </button>
+            <button id="nuevo-btn" class="btn btn-primary oculto">
+                <span class="btn-icon">➕</span>
+                <span class="btn-label">Cotizar</span>
+            </button>
+            <button id="salir-btn" class="btn btn-danger oculto">
+                <span class="btn-icon">🚪</span>
+                <span class="btn-label">Salir</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="container">
+
+        <!-- Pantalla 1: Selección de categoría -->
+        <section id="seleccion" class="selection-screen animated fadeIn">
+            <div class="hero">
+                <h2>Diseño que transforma espacios</h2>
+                <p>Muebles sustentables, hechos a medida para tu hogar y tu negocio.</p>
+            </div>
+
+            <div class="category-grid">
+                <button class="card seleccion-avatar" data-user="Hogar">
+                    <div class="card-img-wrap">
+                        <img src="img/avatars/Base de cama para perro 2-Photoroom.png" alt="Muebles para Hogar">
+                    </div>
+                    <h3>Muebles para Hogar</h3>
+                    <span class="card-desc">Comodidad y estilo para cada rincón</span>
+                </button>
+
+                <button class="card seleccion-avatar" data-user="Negocio">
+                    <div class="card-img-wrap">
+                        <img src="img/avatars/Porta Cartel 2-Photoroom.png" alt="Muebles para Negocio">
+                    </div>
+                    <h3>Muebles para Negocio</h3>
+                    <span class="card-desc">Soluciones funcionales y duraderas</span>
+                </button>
+            </div>
+
+            <!-- Catálogo destacado -->
+            <div class="section-head">
+                <h3 class="subheading">Catálogo de Productos Destacados</h3>
+                <span class="section-line"></span>
+            </div>
+
+            <div class="catalog-grid">
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Base de cama para perro 2-Photoroom.png" alt="Base de cama para perro">
+                    </div>
+                    <p>Base de Cama Perro</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Mesa con bancos tinta-Photoroom.png" alt="Mesa con bancos">
+                    </div>
+                    <p>Mesa con Bancos</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Mueble de beisbol 3.png" alt="Mueble de Beisbol">
+                    </div>
+                    <p>Mueble de Béisbol</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Mueble negro 2-Photoroom_upscayl_2x_high-fidelity-4x.png" alt="Mueble negro">
+                    </div>
+                    <p>Mueble Negro Organizador</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Porta Macetas grande 2-Photoroom.png" alt="Porta Macetas">
+                    </div>
+                    <p>Porta Macetas Grande</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Primer porta rollo barniz 2-Photoroom.png" alt="Porta Rollo">
+                    </div>
+                    <p>Porta Rollo Barniz</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Silla plegable 2-Photoroom.png" alt="Silla Plegable">
+                    </div>
+                    <p>Silla Plegable</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Trailer amarillo.png" alt="Trailer Amarillo">
+                    </div>
+                    <p>Tráiler Decorativo</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Silla con refuerzos.png" alt="Silla con refuerzos">
+                    </div>
+                    <p>Silla con Refuerzos</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Repisa para toallas y papel-Photoroom.png" alt="Repisa para toallas y papel">
+                    </div>
+                    <p>Repisa Toallas y Papel</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Mueble con un cajon grande-Photoroom.png" alt="Mueble con cajón grande">
+                    </div>
+                    <p>Mueble con Cajón Grande</p>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-img-wrap">
+                        <img src="img/avatars/Reja-Photoroom.png" alt="Reja de madera">
+                    </div>
+                    <p>Reja de Madera</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pantalla 2: Timeline y Cotizaciones -->
+        <section id="seccion-timeline" class="timeline-section oculto animated fadeIn">
+            <div class="timeline-toolbar">
+                <div class="timeline-toolbar-info">
+                    <h2 id="timeline-titulo">Cotizaciones · Hogar</h2>
+                    <p class="timeline-subtitle">Solicitudes de presupuesto y mensajes enviados</p>
+                </div>
+                <div class="timeline-toolbar-actions">
+                    <button id="btn-nueva-cotizacion-inline" class="btn btn-primary">
+                        <span class="btn-icon">➕</span>
+                        <span class="btn-label">Cotizar</span>
+                    </button>
+                    <button id="btn-volver-catalogo" class="btn btn-secondary">
+                        <span class="btn-icon">⬅️</span>
+                        <span class="btn-label">Categorías</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Estado vacío cuando no hay mensajes aún -->
+            <div id="timeline-vacio" class="timeline-empty-card">
+                <div class="empty-icon-wrap">🪵</div>
+                <h3>Sin cotizaciones aún</h3>
+                <p>Aún no has solicitado presupuestos en esta categoría. Cuéntanos qué mueble necesitas y te cotizamos a la medida.</p>
+                <button id="btn-empty-cotizar" class="btn btn-primary">
+                    <span class="btn-icon">✍️</span>
+                    <span>Hacer Primera Cotización</span>
+                </button>
+            </div>
+
+            <!-- Lista de mensajes dinámicos -->
+            <ul id="timeline" class="timeline-list">
+            </ul>
+        </section>
+    </main>
+
+    <!-- ================= MODAL DE COTIZACIÓN ================= -->
+    <div id="modal" class="modal-overlay oculto">
+        <div class="modal-content animated zoomIn">
+            <div class="modal-header">
+                <div class="modal-header-info">
+                    <img id="modal-avatar" src="img/icons/icon_x96.png" alt="Muebles ZaJo" class="modal-logo">
+                    <div>
+                        <h2>Nueva Cotización</h2>
+                        <p class="modal-sub">Específica las medidas, tipo de madera o diseño que buscas</p>
+                    </div>
+                </div>
+                <button id="modal-close-x" class="modal-close-btn" title="Cerrar modal" type="button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <label for="txtMensaje" class="modal-input-label">Detalles de tu solicitud:</label>
+                <textarea id="txtMensaje" placeholder="Ej: Hola, quiero cotizar un comedor de madera de 6 sillas acabado nogal, o una repisa flotante de 1 metro..."></textarea>
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-btn" class="btn btn-secondary" type="button">Cancelar</button>
+                <button id="post-btn" class="btn btn-success" type="button">
+                    <span class="btn-icon">🚀</span>
+                    <span>Enviar Consulta</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MODAL DE ALERTA PERSONALIZADO ================= -->
+    <div id="modal-alerta" class="modal-overlay oculto">
+        <div class="modal-content modal-alerta-content animated zoomIn">
+            <div class="modal-alerta-icon-wrap" id="modal-alerta-icon-wrap">
+                <span id="modal-alerta-icon" class="modal-alerta-icon">🔔</span>
+            </div>
+            <h3 id="modal-alerta-titulo" class="modal-alerta-titulo">¡Suscripción Activada!</h3>
+            <p id="modal-alerta-mensaje" class="modal-alerta-mensaje">Recibirás promociones y el estado de tus cotizaciones.</p>
+            <div class="modal-alerta-footer">
+                <button id="modal-alerta-btn" class="btn btn-primary btn-full" type="button">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor para notificaciones Toast -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>© <span id="year"></span> Muebles ZaJo · Hecho con madera sustentable 🌱</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/libs/jquery.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/app.js"></script>
+</body>
+</html>
